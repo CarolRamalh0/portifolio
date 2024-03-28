@@ -1,0 +1,356 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: Gordon;
+    src: url(CS\ Gordon\ Vintage.otf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #E9D5CA;
+
+}
+
+header {
+    margin-bottom: 30px;
+    padding: 0.1px;
+    font-family: "Gordon";
+    background: #15F5BA;
+
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.4em;
+
+}
+
+header a {
+    color: #fff;
+    text-shadow: 6px 4px #7843E6;
+    text-decoration: none;
+}
+
+.name-img {
+    padding: 20px 90px 0px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    /* border: solid navy; */
+}
+
+.name h1 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: #7843E6;
+    font-family: "Bungee", sans-serif;
+    font-size: 8vw;
+    text-shadow: 8px 8px 0 rgba(255, 0, 180, 0.5);
+    line-height: 1em;
+    z-index: 1;
+    /* border: solid orange; */
+}
+
+.name h2 {
+    margin: 1px;
+    font-size: 3vw;
+    z-index: 2;
+}
+
+.name-img img {
+    width: 20vw;
+    height: 20vw;
+    margin: 0px 30px;
+    border-radius: 50%;
+}
+/* ------------------ONDAS-------------------------------------------------------------------------------- */
+.waves {
+    position: relative;
+    bottom: -0.8vh;
+    z-index: 0;
+}
+
+.wave-1 {
+    animation: movewave1 3s ease-in-out infinite alternate;
+}
+
+.wave-2 {
+    animation: movewave2 3s ease-in-out infinite alternate;
+}
+
+@keyframes movewave1 {
+    from {
+        transform: translateX(-100px)
+    }
+
+}
+
+@keyframes movewave2 {
+    from {
+        transform: translateX(70px)
+    }
+}
+/* ---------------------------------------------------------------------------------------- */
+.main-body {
+    color: #E9D5CA;
+    padding: 20px 120px;
+    background: #211951;
+}
+
+p {
+    font-family:  "Dekko", cursive;;
+    font-size: 1.4em
+  
+}
+
+
+/* CARDS */
+
+.test-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+h2 {
+    text-align: center;
+    color: #E9D5CA;
+    line-height: 1em;
+    padding: 0;
+    margin: 0px;
+    font-size: 4em;
+    font-family: "Bungee", sans-serif;
+}
+
+h3 {
+    line-height: 1em;
+    padding: 40px;
+    margin: 2px;
+    font-size: 3em;
+    font-family: "Bungee", sans-serif;
+}
+
+.sbm {
+    text-align: justify;
+    display: flex;
+
+}
+
+.sbm img {
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+    border-radius: 10% 30%;
+}
+
+.sbm p {
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* HARD SKILLS - CODE THE WORLD  */
+
+.card-box {
+    margin: 30px 10px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+
+.card-crd {
+    position: relative;
+    width: 250px;
+    height: 200px;
+    transition: 0.5s;
+    background: #7843E6;
+    padding: 25px;
+    box-shadow: 20px 20px 10px #15F5BA;
+    border-radius: 5px 30px;
+}
+
+.card-crd:hover {
+    transform: translateY(-40px);
+}
+.imgBx{
+    text-align: center;
+}
+.imgBx img{
+    width: 50%;
+}
+
+.imgBx h4 {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 1.9em;
+    font-family: "Bungee", sans-serif;
+    color: #211951;
+
+}
+
+/* PROJETOS  REFERENCIA WEBGUILD*/
+.projects {
+    background: #211951;
+    margin: 0;
+    padding: 2vw;
+    box-sizing: border-box;
+}
+
+.sld-body {
+    margin-top: 30px;
+    height: 80vh;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.sld-main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 3px 10px;
+}
+
+.item {
+    width: 300px;
+    height: 200px;
+    list-style-type: none;
+    position: absolute;
+    top: 80%;
+    transform: translateY(-80%);
+    z-index: 1;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 0 20px 30px;
+    transition: transform 0.1s, left 0.75s, top 0.75s, width 0.75s, heigth 0.75s;
+
+    &:nth-child(1), &:nth-child(2) {
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        transform: none;
+        border-radius: 20px;
+        box-shadow: none;
+        opacity: 1;
+    }
+
+    &:nth-child(3) {left: 45%;}
+    &:nth-child(4) {left: calc(50% + 220px);}
+    &:nth-child(5) {left: calc(50% + 440px);}
+    &:nth-child(6) {left: calc(50% + 660px);}
+}
+
+.sld-content {
+    
+    width: min(30vw, 400px);
+    position: absolute;
+    top: 20%;
+    left: -38vw;
+    transform: translateY(-50%);
+    font: 400 0.85rem helvetica, sans serif;
+    color: #fff;
+    text-shadow: 0 3px 8px;
+    opacity: 0;
+    display: none;
+    
+}
+
+& .title {
+    font-size: 2em;
+    font-family: 'Gordon';
+    text-transform: uppercase;
+}
+
+& .description {
+    line-height: 1.7;
+    margin: 1rem 0 1.5rem;
+    font-size: 1.4em;
+}
+
+& .button {
+    text-decoration: none;
+    width: fit-content;
+    background-color: #0000001e;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 0.25em;
+    padding: 0.75rem;
+    cursor: pointer;
+}
+
+
+
+.item:nth-last-of-type(2) .sld-content {
+    display: block;
+    animation: show 0.75s ease-in-out 0.3s forwards;
+}
+
+@keyframes show {
+    0% {
+        filter: blur(5px);
+        transform: translateY(calc(-50% + 75px));
+    }
+
+    100% {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+.sld-nav {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    user-select: none;
+}
+
+& .btn {
+    color: #fff;
+    margin: 0 0.25rem;
+    padding: 0 0.75rem;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+}
+
+/* FOOTER */
+
+footer {
+    color: #E9D5CA;
+    padding: 20px;
+    background: #18123b;
+    text-align: center;
+}
+
+footer img {
+    margin: 40px;
+    width: 48px;
+}
+
+
+
+footer p {
+    font-size: 1em;
+    font-family: "Gordon";
+}
