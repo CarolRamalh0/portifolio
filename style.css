@@ -225,6 +225,19 @@ h3 {
     box-shadow: 0 3px 10px;
 }
 
+.um{
+    background-image: url("tabuada.png");
+}
+.dois{
+    background-image: url("jogodavelha.png");
+}
+.tres{
+    background-image: url("calculadora.jpg");
+}
+.quatro{
+    background-image: url("tasklist.png");
+}
+
 .item {
     width: 300px;
     height: 200px;
