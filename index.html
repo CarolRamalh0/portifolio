@@ -32,6 +32,11 @@
                 <li><a href="#sbm">Sobre Mim</a></li>
                 <li><a href="#prj">Projetos</a></li>
                 <li><a href="#cnt">Contatos</a></li>
+                <li><label class="switch">
+                    <input type="checkbox" id="toggle">
+                    <span class="slider-btn"></span>
+                  </label>
+                </li>
             </ul>
         </nav>
     </header>
@@ -50,13 +55,13 @@
         <section class="waves">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
 
-                <path class="wave-1" fill="#836FFF" fill-opacity="1"
+                <path class="wave-1" fill-opacity="1"
                     d="M0,288L48,250.7C96,213,192,139,288,96C384,53,480,43,576,69.3C672,96,768,160,864,170.7C960,181,1056,139,1152,154.7C1248,171,1344,245,1392,282.7L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
                 </path>
 
                 <path class="wave-2" fill="#15F5BA" fill-opacity="1"
                     d="M0,256L48,229.3C96,203,192,149,288,149.3C384,149,480,203,576,218.7C672,235,768,213,864,181.3C960,149,1056,107,1152,112C1248,117,1344,171,1392,197.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-                </path>]
+                </path>
 
                 <path class="wave-3" fill=" #211951" fill-opacity="1"
                     d="M0,192L48,208C96,224,192,256,288,229.3C384,203,480,117,576,122.7C672,128,768,224,864,229.3C960,235,1056,149,1152,122.7C1248,96,1344,128,1392,144L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
@@ -77,7 +82,7 @@
                 <div class="sbm">
                     <img src="carol.jfif" alt="">
 
-                    <p>Olá! Sou a Carol, uma jovem de 15 anos apaixonada por tecnologia e design. Atualmente, estou
+                    <p>Olá! Sou a Carol, uma jovem de 16 anos apaixonada por tecnologia e design. Atualmente, estou
                         cursando o 2° ano do ensino médio e também dedicando meu tempo ao estudo de desenvolvimento web
                         no Instituto da Oportunidade Social.
                         <br><br>
@@ -109,11 +114,17 @@
                         <h4>CSS3</h4>
                     </div>
                 </div>
-
                 <div class="card-crd">
                     <div class="imgBx">
                         <img src="js.png" alt="">
                         <h4>JavaScript</h4>
+                    </div>
+                </div>
+
+                <div class="card-crd">
+                    <div class="imgBx">
+                        <img src="php.png" alt="">
+                        <h4>PHP</h4>
                     </div>
                 </div>
 
@@ -144,10 +155,6 @@
                     </div>
                 </div>
 
-            </section>
-
-            <section class="card-box">
-
                 <div class="card-crd">
                     <div class="imgBx">
                         <h4>Oratória</h4>
@@ -157,6 +164,11 @@
                 <div class="card-crd">
                     <div class="imgBx">
                         <h4>Diversidade e inclusão</h4>
+                    </div>
+                </div>
+                <div class="card-crd">
+                    <div class="imgBx">
+                        <h4>Fala de Improviso</h4>
                     </div>
                 </div>
 
@@ -185,7 +197,9 @@
                         <li class="item um">
                             <div class="sld-content">
                                 <h6 class="title">Lista de Tarefas</h6>
-                                <p class="description">A lista de tarefas oferece uma maneira eficiente e organizada para os usuários gerenciarem suas atividades diárias, permitindo adicionar e remover tarefas, feito com html, css e JavaScript.
+                                <p class="description">A lista de tarefas oferece uma maneira eficiente e organizada
+                                    para os usuários gerenciarem suas atividades diárias, permitindo adicionar e remover
+                                    tarefas, feito com html, css e JavaScript.
                                 </p>
                                 <a href="https://github.com/CarolRamalh0/tasklist" class="button" target="_blank">Veja o
                                     Repositório</a>
@@ -198,7 +212,10 @@
                         <li class="item dois">
                             <div class="sld-content">
                                 <h6 class="title">Gerador de Tabuada</h6>
-                                <p class="description"> O gerador de tabuada oferece uma forma interativa e educativa para os usuários praticarem e memorizarem as tabuadas de multiplicação. Os usuários podem selecionar o número da tabuada desejada e visualizar instantaneamente os resultados, feito com html, css e JavaScript.
+                                <p class="description"> O gerador de tabuada oferece uma forma interativa e educativa
+                                    para os usuários praticarem e memorizarem as tabuadas de multiplicação. Os usuários
+                                    podem selecionar o número da tabuada desejada e visualizar instantaneamente os
+                                    resultados, feito com html, css e JavaScript.
                                 </p>
                                 <a href="https://carolramalh0.github.io/tabuada/" class="button" target="_blank">Veja o
                                     Repositório</a>
@@ -209,7 +226,10 @@
                         <li class="item tres">
                             <div class="sld-content">
                                 <h6 class="title">Jogo da Velha</h6>
-                                <p class="description">O jogo oferece uma experiência interativa, permitindo aos jogadores alternarem entre "X" e o "O" enquanto buscam pela vitória em um tabuleiro 3x3, com funcionalidades de verificação de vencedor, empate e Reinicio, feito com html, css e JavaScript.
+                                <p class="description">O jogo oferece uma experiência interativa, permitindo aos
+                                    jogadores alternarem entre "X" e o "O" enquanto buscam pela vitória em um tabuleiro
+                                    3x3, com funcionalidades de verificação de vencedor, empate e Reinicio, feito com
+                                    html, css e JavaScript.
                                 </p>
                                 <a href="https://github.com/CarolRamalh0/jogodavelha" class="button"
                                     target="_blank">Veja o Repositório</a>
@@ -220,7 +240,9 @@
                         <li class="item quatro">
                             <div class="sld-content">
                                 <h6 class="title">Calculadora </h6>
-                                <p class="description">A calculadora oferece funcionalidades básicas de cálculo, como adição, subtração, multiplicação e divisão, proporcionando uma ferramenta prática e acessivel para realizar operações matemáticas, feito com html, css e JavaScript
+                                <p class="description">A calculadora oferece funcionalidades básicas de cálculo, como
+                                    adição, subtração, multiplicação e divisão, proporcionando uma ferramenta prática e
+                                    acessivel para realizar operações matemáticas, feito com html, css e JavaScript
                                 </p>
                                 <a href="https://github.com/CarolRamalh0/calculadora" class="button"
                                     target="_blank">Veja o Repositório</a>
@@ -254,13 +276,12 @@
 
         <h3 id="cnt">Contatos:</h3>
 
-
         <a href="https://www.instagram.com/carolzita4a?igsh=MXBlcHo5OXYyamtiYQ==" target="_blank"><img
-                src="instagram.png" alt=""></a>
-        <a href="https://github.com/CarolRamalh0" target="_blank"><img src="github.png" alt=""></a>
-        <a href="https://www.linkedin.com/in/ana-carolina-ramalho-de-matos-2b875a2b2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-            target="_blank"><img src="linkedin.png" alt=""></a>
-
+                src="https://cdn-icons-png.flaticon.com/128/1384/1384015.png" /></a>
+        <a href="https://github.com/CarolRamalh0" target="_blank"><img
+                src="https://cdn-icons-png.flaticon.com/128/733/733609.png" /></a>
+        <a href="https://www.linkedin.com/in/carol-ramalho/"
+            target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/1384/1384014.png" /></a>
 
         <p>Desenvolvido por Carol Ramalho | Desenvolvimento Web | 03/2024</p>
     </footer>
